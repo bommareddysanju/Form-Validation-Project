@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external FontAwesome script -->
+    <script src="https://kit.fontawesome.com/3812621277.js" crossorigin="anonymous"></script>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Title of the document -->
+    <title>Form-Validation-Project/</title>
+</head>
+
+<body>
+    <!-- Container for the sign-in form -->
+    <div class="formContainer">
+        <!-- Header section -->
+        <header>
+            <!-- Title of the form -->
+            <h1>Sign In</h1>
+        </header>
+
+        <!-- Sign-in form -->
+        <form id="myForm">
+            <!-- Input field for name -->
+            <div class="formDetails">
+                <label for="name"><i class="fa-solid fa-user"></i> Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter user name">
+                <div class="errorMessage"></div> <!-- Error message for name input -->
+            </div>
+
+            <!-- Input field for email -->
+            <div class="formDetails">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email id">
+                <div class="errorMessage"></div> <!-- Error message for email input -->
+            </div>
+
+            <!-- Input field for phone -->
+            <div class="formDetails">
+                <label for="phone"><i class="fa-solid fa-phone"></i> Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+                <div class="errorMessage"></div> <!-- Error message for phone input -->
+            </div>
+
+            <!-- Input field for password -->
+            <div class="formDetails">
+                <label for="password"><i class="fa-solid fa-key"></i> Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password">
+                <div class="errorMessage"></div> <!-- Error message for password input -->
+            </div>
+
+            <!-- Input field for confirming password -->
+            <div class="formDetails">
+                <label for="confirmPassword"><i class="fa-solid fa-key"></i> Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter password">
+                <div class="errorMessage"></div> <!-- Error message for confirming password input -->
+            </div>
+
+            <!-- Submit button -->
+            <button id="button" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- JavaScript file for handling form functionality -->
+    <script src="script.js"></script>
+</body>
+
+</html>

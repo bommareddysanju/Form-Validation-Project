@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9afe0;
+    font-family: Monospace;
+}
+
+.formContainer {
+    width: 50%;
+    height: 95vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+    background-color: #f5dbf1;
+}
+
+header {
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+#myForm {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.formDetails {
+    margin: 1rem 0;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem 0;
+    padding-inline-start: 15px;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 25px;
+
+}
+
+input:focus {
+    outline: 2px solid #24474a;
+}
+
+button {
+    margin: 1rem 0;
+    background-color: #77296c;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    padding: 1rem 0;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.errorMessage {
+    margin-top: .3rem;
+    font-size: .9rem;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+.formDetails.success input {
+    border-color: #156542;
+    outline: none;
+}
+
+.formDetails.error input {
+    border-color: #df232a;
+}
+
+@media only screen and (max-width: 500px) {
+    .formContainer {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    .formContainer {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .formContainer {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .formContainer {
+        width: 40%;
+    }
+}
